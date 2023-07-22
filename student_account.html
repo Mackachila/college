@@ -4,9 +4,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Student account</title>
+	<script defer src ="./index2.js"></script>
 	<link rel="stylesheet" type="text/css" href="./style3.css">
 </head>
 <body>
+	<div id="popup-form">
+        <div class="form-container">
+            <h2>Pop-up Form</h2>
+            <form>
+                <input type="text" name="">
+                <input type="password" name="">
+                <button type="submit">Submit</button>
+                <button id="close-btn" type="submit">Submit</button>
+
+            </form>
+        </div>
+        <div id="overlay"></div>
 	<nav>
 		<a href="#portal">Portal</a>
 		<a href="#courses">Our Courses</a>
@@ -23,33 +36,35 @@
 <p><input type="email" id="email" name="email" required placeholder="Email">
 </form>
 	<main>
-		<a href="staff.html">
+		
 			<section id="portal" backgroun>
 			<h2>Choose a service</h2>
 			<ul>
 				<li>
 					<img src="portal.jpg" alt="Students">
 <h3>Course Registration</b></h3>
-
+<button id="open-btn" onclick="form_function()">Register</button>
 </li>
-</a>
+
 <li>
 <img src="staff.jpg" alt="Staff">
 <h3>Fees and others transactions</h3>
-<a href="staff.html">Pay</a>
+<button id="open-btn">Pay</button>
 </li>
 <li>
 <img src="alumni.jpg" alt="Alumni">
 <h3>Our Online Classes</h3>
- <a href="alumni.html">Join</a> 
+ <button id="open-btn">Join</button> 
 </li>
 <li>
 <img src="alumni.jpg" alt="Alumni">
 <h3>Exams Registration and results</h3>
- <a href="alumni.html">Register</a> Or <a href="alumni.html"> Check Results</a> 
+ <button id="open-btn">Register Exams</button><br><br> <button id="open-btn">Check Results</button>
 </li>
 </ul>
 </section>
+    
+    </div>
 </main>
 <footer>
 	 <p>&copy; 2023 Mackachila Computer College. All rights reserved.</p>
