@@ -2,22 +2,23 @@ body {
 			font-family: Arial, sans-serif;
 			margin: 0;
 			padding: 0;
-			background-color: #f2f2f2;
+			background-color: lightblue;
+			text-decoration: none;
 		}
 		header {
-			background-color: rgb(23, 100, 250);
-			color: #fff;
+			background-color: white;
+			color: blue;
 			padding: 20px;
 			text-align: center;
 		}
 		h1 {
 			margin-top: 0;
-			font-size: 48px;
+			font-size: 30px;
 			text-transform: uppercase;
 		}
 		
 		nav {
-			background-color: #444;
+			background-color: green;
 			color: #fff;
 			padding: 10px;
 			text-align: center;
@@ -39,10 +40,17 @@ body {
 		main {
 			padding: 20px;
 			text-align: center;
+
 		}
+		
 		h2 {
 			margin-top: 0;
-			font-size: 36px;
+			font-size: 25px;
+		}
+		h3 {
+			margin-top: 0;
+			font-size: 25px;
+			color: green;
 		}
 		ul {
 			list-style: none;
@@ -52,6 +60,7 @@ body {
 			justify-content: center;
 			align-items: center;
 			flex-wrap: wrap;
+			text-decoration: none;
 		}
 		li {
 			margin: 10px;
@@ -59,11 +68,16 @@ body {
 			border-radius: 5px;
 			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 			transition: transform 0.3s ease;
+
 		}
 		li:hover {
 			transform: translateY(-5px);
 			box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 			transition: transform 0.3s ease;
+			background-color: white;
+			font-size: 130%;
+			text-decoration: none;
+
 		}
 		li img {
 			width: 30%;
@@ -72,15 +86,17 @@ body {
 		}
 		form{
 			border-style: solid;
+			border-color: blue;
+			color: black;
 			border-width: 0.6px;
 			border-radius: 10px;
 			padding: 10px;
+			background-color: white;
 		}
 		
-		
-		input[type = "email"],input[type = "text"],input[type = "password"], textarea{
+		input[type = "email"],input[type = "text"],input[type = "number"],input[type = "password"], textarea{
 	height: 40%;
-	width: 100%;
+	
 	font-size: 150%
 
 }
@@ -90,14 +106,64 @@ body {
 	color: white;
 	width: 100%;
 	cursor: pointer;
-	font-size: 150%
-	border-radius: 10px;
 	border-color: green;
 	border-style: solid;
 	padding: 10px;
 
 }
 
+.error{
+			color: red;
+			text-align: left;
+		}
+		.success{
+			color: green;
+		}
+				.input-control{
+	display: flex;
+	flex-direction: column;
+	}
+	.input-control input{
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 95%;	
+	}
+	.input-control{
+	display: flex;
+	flex-direction: column;
+	}
+	.input-control input:focus{
+	outline: 0;	
+	}
+	.input-control{
+	display: flex;
+	flex-direction: column;
+	}
+	.input-control.success input{
+	border-color: #09c372;
+		}
+	.input-control.error input{
+	border-color: #ff3860;
+		}
+	.input-control.error{
+	border-color: #ff3860;
+	font-size: 11px;
+	
+		}
+		button{
+			background-color: green;
+			width: 97%;
+			padding: 10px;
+			border-style: solid;
+			border-color: green;
+			border-radius: 10px;
+			color: white;
+			cursor: pointer;
+		}
+	
 		footer {
       background-color: #333;
       color: #fff;
