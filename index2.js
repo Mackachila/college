@@ -1,6 +1,46 @@
 /**
  * 
  */
+ function myFunction() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+// Get references to the elements
+function form_function(){
+var openBtn = document.getElementById("open-btn");
+var closeBtn = document.getElementById("close-btn");
+var popupForm = document.getElementById("popup-form");
+var overlay = document.getElementById("overlay");
+
+// Open the pop-up form
+openBtn.addEventListener("click", function () {
+    popupForm.style.display = "block";
+    overlay.style.display = "block";
+});
+
+// Close the pop-up form
+closeBtn.addEventListener("click", function () {
+    popupForm.style.display = "none";
+    overlay.style.display = "none";
+});
+}
+
+ 
+function myFunction() {
+  var x = document.getElementById("password");
+  var y = document.getElementById("password2");
+  if (x.type === "password") {
+    x.type = "text";
+    y.type = "text";
+  } else {
+    x.type = "password";
+    y.type = "password";
+  }
+}
 
 const form = document.getElementById('form');
 const sname = document.getElementById('sname');
