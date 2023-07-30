@@ -6,6 +6,7 @@
 	<title>Student account</title>
 	<script defer src ="./index2.js"></script>
 	<link rel="stylesheet" type="text/css" href="./style3.css">
+	 <link rel="icon" type="image/png" href="favicon.jpg">
 </head>
 <body>
 	      <div id="overlay"></div>
@@ -14,7 +15,17 @@
 		<a href="#courses">Our Courses</a>
 		<a href="#contact">Contact Us</a>
 	</nav>
-	Darsh Board<br>
+	
+  <div class="popup-form" id="popupForm">
+    <h2>Payment Form</h2>
+    <label for="cardNumber">M-Pesa Number:</label>
+    <input type="text" id="cardNumber">
+    <br>
+    <label for="expiryDate">Amount (Ksh) :</label>
+    <input type="text" id="expiryDate">
+    <br>
+    <button onclick="closePopupForm()">Done</button>
+  </div>
 
 <main>
 		
@@ -30,7 +41,7 @@
 <li>
 <img src="staff.jpg" alt="Staff">
 <h3>Fees and others transactions</h3>
-<button id="open-btn">Pay</button>
+<button id="payButton" onclick="showPopupForm()">Pay</button>
 </li>
 <li>
 <img src="alumni.jpg" alt="Alumni">
