@@ -1,6 +1,18 @@
 /**
  * 
  */
+
+    function showPopupForm() {
+      var popupForm = document.getElementById("popupForm");
+      popupForm.style.display = "block";
+    }
+
+    function closePopupForm() {
+      var popupForm = document.getElementById("popupForm");
+      popupForm.style.display = "none";
+    }
+  
+
  function myFunction() {
   var x = document.getElementById("password");
   if (x.type === "password") {
