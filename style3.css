@@ -189,15 +189,21 @@ body {
       display: none;
       position: fixed;
       top: 50%;
-      width: 30%;
+      width: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
       padding: 20px;
-      border: 1px solid #ccc;
-      background-color: #f7f7f7;
+      border: 4px solid #ccc;
+      border-color: tomato;
+      background-color: lightgreen;
       z-index: 9999;
     }
-    
+    #cardNumber{
+    	padding: 10px;
+    }
+    #expiryDate{
+    	padding: 10px;
+    }
 /* Form container styles */
 .form-container {
     position: fixed;
