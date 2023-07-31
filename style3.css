@@ -208,6 +208,10 @@ body {
     	background-color: red;
     	border-color: red;
     }
+    #paymenttitle{
+    	color: green;
+    	text-align: center;
+    }
 
 /* Form container styles */
 .form-container {
