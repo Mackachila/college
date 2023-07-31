@@ -17,13 +17,13 @@
 	</nav>
 	
   <div class="popup-form" id="popupForm">
-    <h2>Payment Form</h2>
-    <p>Once you click Pay, check your phone to enter your M-pesa pin)</p><br>
+    <h1 id = "paymenttitle">LIPA NA M-PESA</h1>
+    <p>Once you click Pay, check your phone to enter your M-pesa pin</p><br>
     <label for="cardNumber">M-Pesa Number:</label>
-    <input type="text" id="cardNumber">
+    <input type="number" id="cardNumber">
     <br>
     <label for="expiryDate">Amount (Ksh) :</label>
-    <input type="text" id="expiryDate">
+    <input type="number" id="expiryDate">
     <br><br>
     <button >Pay</button><br><br>
     <button id = "cancelpayment" onclick="closePopupForm()">Cancel</button>
