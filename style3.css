@@ -204,6 +204,11 @@ body {
     #expiryDate{
     	padding: 10px;
     }
+    #cancelpayment{
+    	background-color: red;
+    	border-color: red;
+    }
+
 /* Form container styles */
 .form-container {
     position: fixed;
