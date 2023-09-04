@@ -12,6 +12,45 @@
       popupForm.style.display = "none";
     }
   
+ function showPopupForm2() {
+      var popupForm2 = document.getElementById("popupForm2");
+      popupForm2.style.display = "block";
+    }
+
+    function closePopupForm2() {
+      var popupForm2 = document.getElementById("popupForm2");
+      popupForm2.style.display = "none";
+    }
+
+    function showPopupForm3() {
+      var popupForm2 = document.getElementById("popupForm3");
+      popupForm2.style.display = "block";
+    }
+
+    function closePopupForm3() {
+      var popupForm2 = document.getElementById("popupForm3");
+      popupForm2.style.display = "none";
+    }
+
+     function showPopupForm4() {
+      var popupForm2 = document.getElementById("popupForm4");
+      popupForm2.style.display = "block";
+    }
+
+    function closePopupForm4() {
+      var popupForm2 = document.getElementById("popupForm4");
+      popupForm2.style.display = "none";
+    }
+
+     function showPopupForm5() {
+      var popupForm2 = document.getElementById("popupForm5");
+      popupForm2.style.display = "block";
+    }
+
+    function closePopupForm5() {
+      var popupForm2 = document.getElementById("popupForm5");
+      popupForm2.style.display = "none";
+    }
 
  function myFunction() {
   var x = document.getElementById("password");
