@@ -29,6 +29,63 @@
     <button id = "cancelpayment" onclick="closePopupForm()">Cancel</button>
   </div>
 
+<div class="popup-form2" id="popupForm2">
+    <h1 id = "paymenttitle">REGISTER A COURSE</h1>
+    <label for="cardNumber">Course Title:</label>
+    <input type="number" id="cardNumber">
+    <br>
+    <label for="cardNumber">Course Code:</label>
+    <input type="number" id="cardNumber">
+    <br>
+    <label for="cardNumber">Stage e.g Beginner or Continuing:</label>
+    <input type="number" id="cardNumber">
+    <br><br>
+    <button >Register</button><br><br>
+    <button id = "cancelpayment" onclick="closePopupForm2()">Cancel</button>
+  </div>
+
+  <div class="popup-form3" id="popupForm3">
+    <h1 id = "paymenttitle">JOIN ONLINE CLASS</h1>
+    <label for="cardNumber">Admission number:</label>
+    <input type="number" id="cardNumber">
+    <br>
+    <label for="cardNumber">Unit Code:</label>
+    <input type="text" id="cardNumber">
+    <br>
+    <br><br>
+    <button >Join</button><br><br>
+    <button id = "cancelpayment" onclick="closePopupForm3()">Cancel</button>
+  </div>
+
+  <div class="popup-form4" id="popupForm4">
+    <h1 id = "paymenttitle">EXAMS REGISTRATION</h1>
+    <label for="cardNumber">Admission number:</label>
+    <input type="number" id="cardNumber">
+    <br>
+    <label for="cardNumber">Semester Code:</label>
+    <input type="text" id="cardNumber">
+    <br>
+    <br><br>
+    <button >Register</button><br><br>
+    <button id = "cancelpayment" onclick="closePopupForm4()">Cancel</button>
+  </div>
+
+  <div class="popup-form5" id="popupForm5">
+    <h1 id = "paymenttitle">CHECK AND PRINT RESULTS</h1>
+    <label for="cardNumber">Admission number:</label>
+    <input type="number" id="cardNumber">
+    <br>
+    <label for="cardNumber">Year of study:</label>
+    <input type="number" id="cardNumber">
+    <br>
+    <label for="cardNumber">Semester:</label>
+    <input type="text" id="cardNumber">
+    <br>
+    <br><br>
+    <button >Check</button><br><br>
+    <button id = "cancelpayment" onclick="closePopupForm5()">Cancel</button>
+  </div>
+
 <main>
 		
 			<section id="portal" backgroun>
@@ -37,23 +94,23 @@
 				<li>
 					<img src="portal.jpg" alt="Students">
 <h3>Course Registration</b></h3>
-<button id="open-btn" onclick="form_function()">Register</button>
+<button id="open-btn" onclick="showPopupForm2(), closePopupForm(), closePopupForm3 ()">Register</button>
 </li>
 
 <li>
 <img src="staff.jpg" alt="Staff">
 <h3>Fees and others transactions</h3>
-<button id="payButton" onclick="showPopupForm()">Pay</button>
+<button id="payButton" onclick="showPopupForm(), closePopupForm2(), closePopupForm3()">Pay</button>
 </li>
 <li>
 <img src="alumni.jpg" alt="Alumni">
 <h3>Our Online Classes</h3>
- <button id="open-btn">Join</button> 
+ <button id="open-btn" onclick="showPopupForm3(), closePopupForm(), closePopupForm2()">Join</button> 
 </li>
 <li>
 <img src="alumni.jpg" alt="Alumni">
 <h3>Exams Registration and results</h3>
- <button id="open-btn">Register Exams</button><br><br> <button id="open-btn">Check Results</button>
+ <button id="open-btn" onclick="showPopupForm4()">Register Exams</button><br><br> <button id="open-btn" onclick="showPopupForm5()">Check Results</button>
 </li>
 </ul>
 </section>
